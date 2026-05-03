@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Baby Vinaaa</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9eb5, #ffc1cc);
+            color: white;
+            overflow-x: hidden;
+        }
+
+            /* BACKGROUND TANAMAN */
+            body::before {
+                content: "";
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background: url('https://i.ibb.co/3TgG6dM/vine.png') repeat;
+                opacity: 0.1;
+            }
+
+        /* HALAMAN AWAL */
+        .start {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+
+        /* BUTTON */
+        .btn {
+            padding: 15px 30px;
+            border-radius: 30px;
+            border: none;
+            background: white;
+            color: #ff6f91;
+            font-size: 16px;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* TEXT (TANPA LIMIT) */
+        #typing {
+            white-space: pre-line;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        /* LOVE */
+        .heart {
+            position: fixed;
+            z-index: 1;
+            animation: floatUp 5s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(100vh);
+            }
+
+            100% {
+                transform: translateY(-10vh);
+            }
+        }
+
+        /* BALON */
+        .balloon {
+            position: fixed;
+            width: 40px;
+            height: 50px;
+            border-radius: 50%;
+            z-index: 1;
+            animation: float 6s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                bottom: -100px;
+            }
+
+            100% {
+                bottom: 110%;
+            }
+        }
+
+        /* HUJAN */
+        .rain {
+            position: fixed;
+            width: 2px;
+            height: 20px;
+            background: rgba(255,255,255,0.5);
+            z-index: 1;
+            animation: rain 1s linear infinite;
+        }
+
+        @keyframes rain {
+            0% {
+                top: -10%;
+            }
+
+            100% {
+                top: 110%;
+            }
+        }
+
+        /* KUE */
+        .cake {
+            margin: 20px auto;
+            width: 120px;
+            height: 80px;
+            background: #ff6f91;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .candle {
+            width: 10px;
+            height: 30px;
+            background: white;
+            position: absolute;
+            top: -30px;
+            left: 55px;
+        }
+
+        .flame {
+            width: 12px;
+            height: 18px;
+            background: orange;
+            border-radius: 50%;
+            animation: flicker 0.3s infinite;
+        }
+
+        @keyframes flicker {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.3);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* MEJA */
+        .table {
+            width: 200px;
+            height: 15px;
+            background: #8b5e3c;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="start">
+        <h1>💖 Special For Baby Vinaaa 💖</h1>
+        <button class="btn" onclick="start()">Open Surprise 🎁</button>
+    </div>
+
+    <div class="container" id="content" style="display:none;">
+        <h1>Birthdays</h1>
+        <h2>from your future husband</h2>
+
+        <p id="typing"></p>
+
+        <div class="cake">
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+        <div class="table"></div>
+
+        <audio id="music" loop>
+            <source src="lagu.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        const text = `Hiiiiiii 👋
+        my gf 🧕 lv 2
+        Happy Birth day 🎂 🥳🥳 Yang ke 17
+        yaaaaa cayangggggg
+
+        Mudahan dengan bertambahnya usia dewasa👸 iniii cayangku dapat menghadapi semua masalah 😟 yang adaaa
+        tumbuh menjadi wanita yang sukses jadi milikku -eh maksudnya sukses dunia, akhirat dan hubungan🤭
+        menjadi wanita primadona bagi anak anak😋 kita maksudnya... bagi lingkungan mu.
+        dapat menahan emosi biar sosok aseli raja ibelis ga keluar 😈
+        dan mengutarakan isi❤️ hati cayangkuuuu
+
+        lebih kuat lagi menghadapi permasalahan🥲 yang ada meskipun sebanyak apapun itu.....
+        kan ada guweh😜👆
+
+        jangan biarkan npc lain buat wife👰🏻 ku ini cedih dan down kaya si itutuh R dan B👹
+        nanti aku cedihh🥹 loo kalo cayangkuu down😭....
+
+        Mudahan tumbuh menjadi wanita🧕🏻 hebat yang buka salon 100 cabang....
+        sosok aseli ciio yang iymut🤫😈
+
+        segala harapan dan doa🤲 dari orang tua mudahan dapat tercapai....❤️❤️
+
+        dan semoga tuhan memberikan jalan🛣️ yang terbaik untuk cantikkuu ini
+        dipermudahkan segala urusan😘 nya
+        dan semoga tuhan menjadikan mu mami idaman🥰
+        juga menjadikan mu mami ku sih😜 hehe.. 12 anak yaa🤰🏻
+
+        dan aku berharap dan berdoa......🤲
+        cayangkuu dapat lingkungan yang lebih baik lagi
+        dan teman perempuan yang lebih banyak dan baik😇
+
+        aku ada disini koo dengerin setiap 😒 keluh kesah mu
+        👹 setiap amarah mu
+        🥹 kesedihan dan tangis muu 😭
+
+        sooo jangan ragu lagi yaaaaaa😊
+        cayangggggg🥰
+        lop yuuuuuuuuuuuuu❤️❤️❤️❤️
+
+        🕊️ engkau adalah perempuan yang tumbuh dari luka
+        diam-diam menguat tanpa banyak suara
+
+        tak semua jalanmu mudah
+        tapi kamu tetap bertahan 💪
+
+        dalam jatuh kamu belajar
+        dalam sepi kamu jadi lebih hebat ❤️
+
+        semoga bahagia datang tanpa kamu paksa
+        dan cinta hadir tanpa melukaimu lagi ❤️`;
+
+        let i = 0;
+
+        function start(){
+        document.querySelector(".start").style.display="none";
+        document.getElementById("content").style.display="block";
+        document.getElementById("music").play();
+
+        typeWriter();
+        hearts();
+        balloons();
+        rain();
+        }
+
+        function typeWriter(){
+        if(i < text.length){
+        let el = document.getElementById("typing");
+        el.innerHTML += text.charAt(i);
+        i++;
+        window.scrollTo(0, document.body.scrollHeight);
+        setTimeout(typeWriter, 20);
+        }
+        }
+
+        function hearts(){
+        setInterval(()=>{
+        let h = document.createElement("div");
+        h.className="heart";
+        h.innerHTML="💖";
+        h.style.left=Math.random()*100+"vw";
+        h.style.fontSize=(20+Math.random()*20)+"px";
+        document.body.appendChild(h);
+        setTimeout(()=>h.remove(),5000);
+        },200);
+        }
+
+        function balloons(){
+        setInterval(()=>{
+        let b = document.createElement("div");
+        b.className="balloon";
+        b.style.left=Math.random()*100+"vw";
+        b.style.background=["#ff6f91","#ff8fab","#ffc2d1"][Math.floor(Math.random()*3)];
+        document.body.appendChild(b);
+        setTimeout(()=>b.remove(),6000);
+        },400);
+        }
+
+        function rain(){
+        setInterval(()=>{
+        let r = document.createElement("div");
+        r.className="rain";
+        r.style.left=Math.random()*100+"vw";
+        document.body.appendChild(r);
+        setTimeout(()=>r.remove(),1000);
+        },100);
+        }
+    </script>
+
+</body>
+</html>
